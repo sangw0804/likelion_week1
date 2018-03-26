@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template: 1fr 500px 1fr / 1fr 300px 1fr;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 3fr 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 8px;
+    grid-area: 2 / 2 / 1 span / 1 span;
+}
+
+header {
+    width: 297.5px;
+    display: grid;
+    background-color: peachpuff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-self: stretch;
+    align-self: stretch;
+    z-index: -3;
+}
+
+img {
+    align-self: center;
+    justify-self: center;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.7rem;
+    width: 250px;
+    align-self: end;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.desc {
+    overflow: auto;
+    width: 250px;
+    height: 200px;
+}
